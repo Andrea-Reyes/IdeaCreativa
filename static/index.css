@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.encabezado {
+    background-color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 70%;
+    max-height: 50px;
+    object-fit: contain;
+}
+
+.tituloEncabezado {
+    width: 95%;
+    text-align: center;
+    font-size: 10px;
+    color: #294B6E;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('https://www.softzone.es/app/uploads-softzone.es/2021/05/Programar-en-IDE-1200x675.jpg') center/cover no-repeat;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.cuadroCta {
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.cuadroCta h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cuadroCta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.boton-cta {
+    display: inline-block;
+    background-color: #fff;
+    color: #294B6E;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.imagenCta {
+    width: 40%;
+    text-align: center;
+}
+
+.imagenCta img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.contenidoInfo {
+    margin-top: 40px;
+    border-top: 1px solid rgb(192, 192, 192);
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3F4ED;
+}
+
+.textoInfo {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.textoInfo p{
+    text-align: left;
+}
+
+.imagenInfo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenInfo img {
+    width: 90%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.tituloTestimonio{
+    text-align: center;
+}
+
+.testimonios {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    color: #294B6E;
+}
+
+.cuadroTestimonio {
+    width: 30%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagenTestimonio {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.imagenTestimonio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textoTestimonio {
+    color: #294B6E;
+    margin-top: 10px;
+}
