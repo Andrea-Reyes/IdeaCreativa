@@ -1,15 +1,14 @@
-##from flask import Flask, render_template
+from flask import Flask, render_template
 
+app = Flask(__name__)
 
-##app = Flask(_name_)
+@app.route("/")
+def home():
+    return render_template("index.html")
 
-##@app.route("/")
-##def home():
-##    return render_template("index.html")
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
-##@app.route("/contact")
-##def contact():
-##    return render_template("contact.html")
-
-##if _name_ == "_main_":
-##    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
